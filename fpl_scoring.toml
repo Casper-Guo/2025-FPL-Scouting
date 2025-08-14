@@ -1,0 +1,58 @@
+[appearance.under_60]
+all = 1
+
+[appearance.over_60]
+all = 2
+
+[goal]
+gkp = 10
+def = 6
+mid = 5
+fwd = 4
+
+[assist]
+all = 3
+
+[clean_sheet]
+gkp = 4
+def = 4
+mid = 1
+fwd = 0
+
+[save.shot]
+gkp = 0.33
+def = 0
+mid = 0
+fwd = 0
+
+[save.penalty]
+gkp = 5
+def = 0
+mid = 0
+fwd = 0
+
+[defensive_contribution]
+gkp = 0
+# every 10
+def = 2
+# every 12
+mid = 2
+fwd = 2
+
+[penalty_miss]
+all = -2
+
+[ga]
+gkp = -1
+def = -1
+mid = 0
+fwd = 0
+
+[ga.own_goal]
+all = -2
+
+[discipline.yc]
+all = -1
+
+[discipline.rc]
+all = -3
