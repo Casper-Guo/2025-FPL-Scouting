@@ -11,7 +11,7 @@ def main(input_file):
     for row in reader:
         name = row["name"]
         p_clean_sheet = float(row["p_clean_sheet"])
-        avg_def_cons = int(row["def_cons"]) / int(row["starts"])
+        avg_def_cons = int(row["def_cons"]) / (int(row["minutes"]) / 90)
         expected_points = p_clean_sheet * 4 + poisson.sf(9, avg_def_cons) * 2
         results.append((name, expected_points))
     for name, expected_points in sorted(results, key=lambda x: x[1], reverse=True):
